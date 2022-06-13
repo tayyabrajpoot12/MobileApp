@@ -30,7 +30,7 @@ const TopBar = () => {
     <AppBar color="#000"
       style={{ height: 70 }}
       title="Mobile App"
-    leading={props => (
+    trailing={props => (
       <IconButton
         icon={props => <Icon name="menu" {...props} onPress={showMenu} />}
         {...props}
@@ -41,6 +41,7 @@ const TopBar = () => {
     <Menu
       visible={visible}
       onRequestClose={hideMenu}
+      style={{marginLeft:225}}
     >
       <MenuItem onPress={()=>{navigation.navigate('Home')}}>Home</MenuItem>
       <MenuItem onPress={()=>{navigation.navigate('Signup')}}>Signup</MenuItem>

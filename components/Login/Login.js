@@ -31,7 +31,7 @@ export default function Login() {
   const onSubmit = async (data) => {
 
     reset();
-    let resp = await axios.post('http://192.168.43.152:9192/auth/login', data);
+    let resp = await axios.post('http://192.168.18.72:9192/auth/login', data);
 
     if (resp.data) {
 
